@@ -1,3 +1,9 @@
 # The-dose-reconstruction-of-phantoms-in-vivo-in-X-Flash-radiotherapy
 体模内部剂量重建——基于电离辐射声成像技术
 仿真了X射线Flash放疗中三种体模内部的剂量分布，通过阵列传感器采集的信号时间序列进而重建出体模内部的投递剂量分布
+1.certain_plane.txt为通过蒙卡模拟的剂量分布图，用于计算产生的声压
+2.plot_radiation_distribution.m表示用于计算剂量分布以及诱导产生的声压分布，并进行可视化展示
+3.Single_sensor_collect_data.m表示设置单个传感器采集电离辐射声信号时间序列，用于测试信号是否正确
+4.Spectrum_diagram.m用于分析采集信号的频谱分布
+5.Radiation_dose_reconstruction_2D_TRR.m利用时间反转重建算法重建信号的初始声压分布图以及在体模中的投递剂量分布图
+PS: 其他文件都是测试文件，not important!
